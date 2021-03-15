@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+ <link rel="stylesheet"  
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/> 
+ <script  
+src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>  <script  
+src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+ <title>{% block title %} Electronics Commerce {% endblock  %}</title> 
+ <style type="text/css"> 
+ .min-h-100 { min-height: 100%; } 
+ </style> 
+</head> 
+<body> 
+ <div class="row"> 
+ <div id="header" class="bg-info col-sm-12 col-md-12 col-lg-12">  <div class="row"> 
+ <div class="col-sm-4 col-md-4 col-lg-4"> 
+ <img src="data:image/png;base64,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" alt="E-commerce Logo"  
+style="height:50px; width:auto;" /> 
+ </div> 
+ <div class="col-sm-7 col-md-7 col-lg-7"> 
+ <h2> 
+
+
+ {% block header %} Electronic Commerce {% endblock %} 
+
+ 
+ </h2> 
+ </div> 
+ <div class="col-sm-1 col-md-1 col-lg-1"> 
+ <a class="btn btn-success btn-sm ml-3" href="#cart model" data-toggle="modal"> 
+ <span>Cart</span> 
+ <span class="badge badge-light"> 
+ <label id="cart_qty">0</label>  </span> 
+ </a> 
+ </div> 
+ </div> 
+ </div> 
+ </div>
+
+ <div class="row"> 
+    <div id="sidebar" class="min-h-100 min-h-800 bg-light border col sm-3 col-md-3 col-lg-3"> 
+    {% block sidebar %} 
+    <ul> 
+    <li><a href="/admin/">Admin</a></li> 
+    <li><a href="/">Product</a></li> 
+    <li><a href="/">Cart</a></li>
+    </ul> 
+    {% endblock %} 
+    </div> 
+    <div id="content" class="min-h-100 bg-light col-sm-9 col-md-9 col lg-9"> 
+    {% block content %}{% endblock %} 
+    </div> 
+    </div> 
+   </body> 
+   </html>
+   
+   
